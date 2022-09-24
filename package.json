@@ -2,7 +2,7 @@
   "name": "goit-react-hw-04-feedback-usereducer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dmytrostd.github.io/goit-react-hw-04-feedback-useReducer-/",
+  "homepage": "https://dmytrostd.github.io/goit-react-hw-04-feedback-useReducer/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",

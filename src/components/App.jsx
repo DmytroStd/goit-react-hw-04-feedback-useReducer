@@ -22,6 +22,22 @@ function feedbackReducer(state, action) {
   }
 }
 
+// function feedbackReducerDuble(state, action) {
+//   switch (action.type) {
+//     case 'positive':
+//       return { ...state, positive: state.positive + 5 };
+
+//     case 'neutral':
+//       return { ...state, neutral: state.neutral + 5 };
+
+//     case 'negative':
+//       return { ...state, negative: state.negative + 5 };
+
+//     default:
+//       return;
+//   }
+// }
+
 export const App = () => {
   const [state, dispatch] = useReducer(feedbackReducer, {
     positive: 0,
@@ -42,6 +58,7 @@ export const App = () => {
               feedbackReducer={btnName =>
                 dispatch({ type: btnName, payload: 1 })
               }
+              // feedbackReducerDuble={btnName => dispatch({ type: btnName })}
             />
           </div>
         </Section>

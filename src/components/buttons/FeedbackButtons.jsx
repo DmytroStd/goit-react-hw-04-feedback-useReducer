@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './Btn.module.css';
 
-const FeedbackButtons = ({ state, feedbackReducer }) => {
+const FeedbackButtons = ({ state, feedbackReducer, feedbackReducerDuble }) => {
   return state.map((btnName, i) => {
     return (
       <button
@@ -10,6 +10,7 @@ const FeedbackButtons = ({ state, feedbackReducer }) => {
         name={btnName}
         className={styles[btnName]}
         onClick={() => feedbackReducer(btnName)}
+        // onDoubleClick={() => feedbackReducerDuble(btnName)}
       >
         {btnName}
       </button>
